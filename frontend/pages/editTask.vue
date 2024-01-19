@@ -1,0 +1,4 @@
+<template>
+  <SideBar />
+  <EditTaskForm />
+</template>
