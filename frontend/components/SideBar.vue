@@ -20,20 +20,6 @@
             </a>
           </li>
           <li>
-            <a href="/createTask"
-              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-              <Icon name="ic:baseline-add-circle-outline" class="text-2xl" />
-              <span class="flex-1 ms-3 whitespace-nowrap">Criar tarefa</span>
-            </a>
-          </li>
-          <li>
-            <a href="/editTask"
-              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-              <Icon name="material-symbols:edit-square-outline" class="text-2xl" />
-              <span class="flex-1 ms-3 whitespace-nowrap">Editar</span>
-            </a>
-          </li>
-          <li>
             <a href="/finishedTask"
               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
               <Icon name="material-symbols:check-box-outline" class="text-2xl" />
