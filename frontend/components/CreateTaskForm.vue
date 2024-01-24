@@ -2,9 +2,14 @@
   <div>
     <div
       class="sm:w-1/2 relative overflow-x-auto shadow-md sm:rounded-lg sm:mt-20 sm:ml-auto sm:mr-16 lg:mr-64 md:ml-auto">
-
+      <div>
+        <button  @click="close"
+         class="absolute right-0 top-0 m-4 text-2xl">
+          <Icon name="material-symbols:close-small-outline" />
+        </button>
+      </div>
       <form class="py-4 px-6">
-        <div class="grid gap-6 mb-6 md:grid-cols-2">
+        <div class="grid gap-6 mb-6 md:grid-cols-2 mt-7">
           <div>
             <label for="task" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
               Tarefa
@@ -37,7 +42,6 @@
 <script setup>
 import check from '~/utils/checkField.js';
 import apiService from '~/services/apiService.js';
-import { useRouter } from 'vue-router';
 
 const task = ref()
 const priority = ref('escolha')
@@ -59,6 +63,9 @@ const create = async (t, p) => {
       console.error("Erro:", error);
     }
   }
-
 } 
+
+const close = async () =>{
+  await navigateTo('/')
+}
 </script>

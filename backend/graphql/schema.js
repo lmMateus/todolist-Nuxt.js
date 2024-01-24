@@ -11,6 +11,8 @@ const typeDefs = gql`
   type Query {
     tasks: [Task!]!
     incompleteTasks: [Task!]!
+    finishedTasks: [Task!]!
+    taskById(id: ID!): Task
   }
 
   type Mutation {
@@ -21,11 +23,19 @@ const typeDefs = gql`
       ): Task
       
     updateTask(
+      id: ID!
       task: String!
       priority: String!
+      ): Task
+
+    completedTask(
+      id: ID!
       status: Boolean!
       ): Task
+          
     deleteTask(id: ID!): Task
+
+    deleteTasks(status: Boolean!): [Task]
   }
 `;
 

@@ -1,3 +1,6 @@
 <template>
-  <a href="/">Concluida</a>
+  <div>
+    <SideBar />
+    <FinishedTaskList />
+  </div>
 </template>
