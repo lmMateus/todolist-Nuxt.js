@@ -9,7 +9,7 @@ A simple to-do list program to demonstrate my knowledge of the following technol
 - MongoDB
 
 ##
-
+![Image](print.png)
 
 ### How to install:
 Open your terminal in /todolist-nuxt/frontend and run:
