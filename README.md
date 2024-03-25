@@ -28,7 +28,7 @@ Open a terminal in /todolist-nuxt/frontend and run:
 
 Open another terminal in /todolist-nuxt/backend and run:
 
-    node index.js
+    nodemon start
   
   
 
